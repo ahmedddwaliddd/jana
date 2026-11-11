@@ -103,6 +103,12 @@ document.getElementById("dialogNext").addEventListener("click", () => {
 // الأمنية الأخيرة
 document.getElementById("wishButton").addEventListener("click", () => {
   const reveal = document.getElementById("wishReveal");
+  const loveMessage = document.getElementById("loveMessage");
+  const signature = document.getElementById("signature");
+
   reveal.hidden = false;
+  loveMessage.hidden = false;
+  signature.hidden = false;
+
   document.getElementById("wishButton").textContent = "أمنية من قلبي ♥";
 });
