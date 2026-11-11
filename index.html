@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#21152d">
+  <title>A message for Jana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="stars" id="stars" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">11:11 <span>♡</span></a>
+    <nav aria-label="القائمة الرئيسية">
+      <a href="#letter">رسالتي</a>
+      <a href="#reasons">11 سبب</a>
+      <a href="#memories">ذكرياتنا</a>
+    </nav>
+    <span class="date-pill">11 / 11</span>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="tiny-heart">♥</span> A LITTLE WORLD MADE FOR YOU</p>
+        <h1>في وسط كل الأيام،<br><span>يومك مختلف.</span></h1>
+        <p class="hero-copy">مش عارف أخلي اليوم ده مميز قد إيه، بس حبيت أعملك حاجة صغيرة تفكّرك إنك مميزة عندي كل يوم.</p>
+        <a class="primary-button" href="#letter">افتحي مفاجأتك <span>♡</span></a>
+        <p class="small-note">11:11 — Just You & Me</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="glow-heart">♥</div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span>
+        <span class="floating-word">you are my favorite</span>
+      </div>
+      <a class="scroll-hint" href="#letter">انزلي واكتشفي <span>↓</span></a>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="section-heading">
+        <p class="eyebrow">A LETTER FOR YOU</p>
+        <h2>كلمتين من قلبي <span>♡</span></h2>
+        <p>في كلام ساعات بيكون أحلى لما يتقال بهدوء...</p>
+      </div>
+      <button class="envelope" id="envelope" type="button" aria-label="افتحي الظرف">
+        <span class="envelope-flap"></span>
+        <span class="envelope-heart">♥</span>
+        <span class="envelope-label">To Jana, with love</span>
+      </button>
+      <article class="letter-card" id="letterCard" aria-live="polite">
+        <p class="letter-date">11 / 11 / 2026</p>
+        <h3>إلى جنى،</h3>
+        <p id="typedLetter"></p>
+        <p class="signature">من شخص بيحبك جدًا <span>♥</span></p>
+      </article>
+      <p class="hint" id="envelopeHint">اضغطي على الظرف عشان تفتحي رسالتك</p>
+    </section>
+
+    <section class="section reasons-section" id="reasons">
+      <div class="section-heading">
+        <p class="eyebrow">11 LITTLE REASONS</p>
+        <h2>11 سبب يخلّوني أحبك <span>♡</span></h2>
+        <p>اختاري قلب، وكل واحد مخبّي جواه سبب.</p>
+      </div>
+      <div class="reasons-grid" id="reasonsGrid"></div>
+      <p class="hint">كل قلب وراه حكاية صغيرة...</p>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">OUR LITTLE MEMORIES</p>
+        <h2>تفاصيل مش بنساها <span>♡</span></h2>
+        <p>هنا مكان صورنا واللحظات اللي ليها مكان خاص عندي.</p>
+      </div>
+      <div class="memory-grid">
+        <article class="memory-card memory-large">
+          <div class="photo-placeholder"><span>✦</span><small><img id="qqq" src="images/6026350308050539482_121.jpg" alt=""> </small></div>
+          <div class="memory-caption"><strong>لحظة مميزة</strong></p> احلى طريق هو اللي بمشيه معاكي، وأحلى صدفة إنك كنتي جنبي</p></div>
+        </article>
+        <article class="memory-card">
+          <div class="photo-placeholder"><span>♡</span><small><img id="qqq" src="images/6026350308050539483_121.jpg" alt=""></small></div>
+          <div class="memory-caption"><strong>تفصيلة بحبها</strong><p>صورة بحبها ليكي بكل تفاصيلك</p></div>
+        </article>
+        <article class="memory-card">
+          <div class="photo-placeholder"><span>✧</span><small><img id="qqqq" src="images/6026350308050539484_121.jpg" alt=""></small> </small></div>
+          <div class="memory-caption"><strong>يوم مش عادي</strong><p>لحظة مش قادر انسى شكلك فيها ولا احساسي بفرحة انك قاعهد جنبي </p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wish-section section" id="wish">
+      <div class="wish-card">
+        <p class="eyebrow">MAKE A WISH</p>
+        <div class="wish-star">✦</div>
+        <h2> لو كان ليا امنية في يوم 11/11 </h2>
+        <p class="wish-text">هتكون إن الأيام الجاية تشيلك ليكي حاجات حلوة كتير، وإن أفضل لحظاتك لسه مستنياكي.</p>
+        <button class="wish-button" id="wishButton" type="button">اضغطي على الأمنية <span>♡</span></button>
+        <p class="wish-reveal" id="wishReveal" hidden>وأتمنى أكون سبب في ابتسامة من ابتساماتك الكتير. ♥</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love, just for Jana</p>
+    <span>11:11 <b>♥</b></span>
+    <small>مش لازم اليوم يكون مميز عشان أقولك إنك مميزة.</small>
+  </footer>
+
+  <dialog class="reason-dialog" id="reasonDialog">
+    <button class="dialog-close" id="dialogClose" type="button" aria-label="إغلاق">×</button>
+    <span class="dialog-heart">♥</span>
+    <p class="eyebrow">REASON <span id="reasonNumber">01</span> / 11</p>
+    <h3 id="reasonTitle">بحب ضحكتك</h3>
+    <p id="reasonDescription">لأنها بتخلّي أي يوم عادي أحلى.</p>
+    <button class="dialog-next" id="dialogNext" type="button">السبب اللي بعده ←</button>
+  </dialog>
+</body>
+</html>
