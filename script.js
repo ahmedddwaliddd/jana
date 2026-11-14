@@ -92,10 +92,21 @@ function showReason(index) {
   reasonNumber.textContent = String(index + 1).padStart(2, "0");
   reasonTitle.textContent = reason.title;
   reasonDescription.textContent = reason.description;
-  reasonDialog.showModal();
+
+  if (typeof reasonDialog.showModal === "function") {
+    reasonDialog.showModal();
+  } else {
+    reasonDialog.setAttribute("open", "open");
+  }
 }
 
-document.getElementById("dialogClose").addEventListener("click", () => reasonDialog.close());
+document.getElementById("dialogClose").addEventListener("click", () => {
+  if (typeof reasonDialog.close === "function") {
+    reasonDialog.close();
+  } else {
+    reasonDialog.removeAttribute("open");
+  }
+});
 document.getElementById("dialogNext").addEventListener("click", () => {
   showReason((currentReason + 1) % reasons.length);
 });
